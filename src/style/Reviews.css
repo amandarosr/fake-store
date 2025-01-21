@@ -1,0 +1,102 @@
+form {
+  display: flex;
+  flex-direction: column;
+  width: min(75%, 44rem);
+  margin-top: 30px;
+}
+
+form h3 {
+  margin: 5px;
+}
+
+.off {
+  color: rgb(163, 163, 163);
+}
+
+.on {
+  color: #deca30;
+}
+
+.reviewsTop {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 10px 0;
+}
+
+.emailInput {
+  width: 38%;
+  border-radius: 10px;
+  border: 2px solid rgb(107, 33, 56, 0.6);
+  padding: 0 10px;
+}
+
+.rateBtn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  font-size: 18px;
+  margin: 0 4px;
+}
+
+.reviewsBottom {
+  /* background-color: blue; */
+  display: flex;
+  flex-flow: row wrap;
+  margin-bottom: 10px;
+}
+
+.commentInput {
+  resize: none;
+  width: max(70%, 20rem);
+  border-radius: 15px;
+  border: 2px solid rgb(107, 33, 56, 0.6);
+  padding: 8px;
+}
+
+.submitBtn {
+  border: solid 1px rgb(97, 26, 48, 0.5);
+  background-color: rgb(107, 33, 56, 0.9);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  border-radius: 25px;
+  color: #fcfced;
+  font-size: 15px;
+  height: 30px;
+  width: 110px;
+  margin: 10px 15px;
+}
+
+.submitBtn:hover {
+  background-color: rgb(163, 50, 86, 0.9);
+}
+
+.review {
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  margin: 10px 5px;
+}
+
+.reviewTop {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: -15px;
+}
+
+.reviewEmail {
+  font-weight: 600;
+}
+
+.reviewRating {
+  display: flex;
+  flex-flow: row nowrap;
+  margin: 36px 15px 0;
+  font-size: 18px;
+}
+
+.reviewComment {
+  font-size: 16px;
+  font-style: italic;
+  margin-left: 15px;
+}

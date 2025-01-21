@@ -1,0 +1,52 @@
+.secondHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+#backBtn {
+  justify-self: baseline;
+  color: #6b2138;
+  font-size: 21px;
+  text-decoration: none;
+}
+
+#backBtn:hover {
+  font-weight: 600;
+}
+
+#secondTitle {
+  color: #6b2138;
+  text-shadow: 3px 3px rgba(0, 0, 0, 0.12);
+  font-size: 44px;
+  font-family: TitleFont;
+  margin: -3px 30px -8px 35px;
+}
+
+/* .firstHeaderBtn {
+    
+} */
+
+.headerBtn {
+  border: solid 1px rgb(97, 26, 48, 0.5);
+  background-color: #6b2138;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  border-radius: 25px;
+  height: 42px;
+  width: 65px;
+  margin-bottom: 10px;
+}
+
+.simpleHeaderIcon {
+  height: 28px;
+  padding: 2px 3px 0 0;
+}
+
+.homeIcon {
+  height: 25px
+}
+
+.headerBtn:hover {
+  background-color: #a33256;
+}
