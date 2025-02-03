@@ -84,7 +84,7 @@
 }
 
 .checkoutBtns {
-  margin: 25px 0;
+  margin: 20px 0;
 }
 
 .checkoutBtns button {
@@ -96,7 +96,7 @@
   font-size: 17px;
   height: 37px;
   padding: 5px 15px;
-  margin: 0 8px;
+  margin: 8px;
 }
 
 .checkoutBtns button:hover {
@@ -104,6 +104,10 @@
 }
 
 @media screen and (max-width: 830px) {
+  .cart-container {
+    justify-content: center;
+  }
+
   .title-div {
     width: 75%;
   }
@@ -115,5 +119,17 @@
 
   .cart-main {
     width: 80%;
+  }
+
+  .checkoutBtns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .checkoutBtns button {
+    font-size: 13px;
+    height: 30px;
+    font-weight: 600;
   }
 }

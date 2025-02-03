@@ -50,7 +50,7 @@ span {
 
 @media screen and (max-width: 830px) {
     .productImg {
-        height: 100px;
+        height: 95px;
     }
 
     .productName {
@@ -59,10 +59,10 @@ span {
     }
 
     .priceSymbol {
-        margin-top: 24px;
+        margin-top: 23px;
     }
 
     .priceNumber {
-        font-size: 21px;
+        font-size: 20px;
     }
 }
