@@ -38,7 +38,7 @@ header {
 .title {
   color: #6B2138;
   text-shadow: 3px 3px rgba(0,0,0,0.12);
-  font-size: 3vw;
+  font-size: 50px;
   font-family: TitleFont;
 }
 
@@ -103,4 +103,48 @@ header {
 
 .headerIcon {
   height: 22px;
+}
+
+@media screen and (max-width: 830px) {
+  header {
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+  }
+
+  #menuIcon {
+    height: 46px;
+    margin: 0 0 10px -20px;
+  }
+
+  .title {
+    font-size: 35px;
+    margin: 0 20px 15px -8px;
+  }
+
+  #searchArea {
+    height: 24px;
+    width: 180px;
+    margin: 20px 0 -5px 20px;
+  }
+
+  .iconCase {
+    height: 27px;
+    width: 60px;
+    margin: 20px -15px -20px 5px;
+  }
+
+  #queryBtn {
+    height: 22px;
+    width: 28px;
+  }
+
+  #cartBtn {
+    height: 20px;
+    width: 30px;
+  }
+
+  .headerIcon {
+    height: 17px;
+  }
 }

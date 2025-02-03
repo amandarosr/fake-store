@@ -47,3 +47,22 @@ span {
 .priceNumber {
     font-size: 22px;
 }
+
+@media screen and (max-width: 830px) {
+    .productImg {
+        height: 100px;
+    }
+
+    .productName {
+        font-size: 15px;
+        height: 37px;
+    }
+
+    .priceSymbol {
+        margin-top: 24px;
+    }
+
+    .priceNumber {
+        font-size: 21px;
+    }
+}

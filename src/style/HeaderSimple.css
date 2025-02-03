@@ -8,7 +8,6 @@
 #backBtn {
   justify-self: baseline;
   color: #6b2138;
-  font-size: 21px;
   text-decoration: none;
 }
 
@@ -23,10 +22,6 @@
   font-family: TitleFont;
   margin: -3px 30px -8px 35px;
 }
-
-/* .firstHeaderBtn {
-    
-} */
 
 .headerBtn {
   border: solid 1px rgb(97, 26, 48, 0.5);
@@ -49,4 +44,26 @@
 
 .headerBtn:hover {
   background-color: #a33256;
+}
+
+@media screen and (max-width: 830px) {
+  #secondTitle {
+    font-size: 35px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  .headerBtn {
+    height: 36px;
+    width: 56px;
+    margin-bottom: 7px;
+  }
+
+  .simpleHeaderIcon {
+    height: 25px;
+  }
+
+  .homeIcon {
+    height: 22px;
+  }
 }
