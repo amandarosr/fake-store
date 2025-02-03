@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/fake-store/static/css/main.c8f46922.css",
+    "main.css": "/fake-store/static/css/main.0425372a.css",
     "main.js": "/fake-store/static/js/main.016de6a6.js",
     "static/media/Gontserrat-Regular.ttf": "/fake-store/static/media/Gontserrat-Regular.cc49d641c0b5d3d7b157.ttf",
     "static/media/Aurora.otf": "/fake-store/static/media/Aurora.5b2c01c11a30de7fe92d.otf",
     "index.html": "/fake-store/index.html",
-    "main.c8f46922.css.map": "/fake-store/static/css/main.c8f46922.css.map",
+    "main.0425372a.css.map": "/fake-store/static/css/main.0425372a.css.map",
     "main.016de6a6.js.map": "/fake-store/static/js/main.016de6a6.js.map"
   },
   "entrypoints": [
-    "static/css/main.c8f46922.css",
+    "static/css/main.0425372a.css",
     "static/js/main.016de6a6.js"
   ]
 }
