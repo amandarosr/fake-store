@@ -24,10 +24,6 @@
   margin: -3px 30px -8px 35px;
 }
 
-/* .firstHeaderBtn {
-    
-} */
-
 .headerBtn {
   border: solid 1px rgb(97, 26, 48, 0.5);
   background-color: #6b2138;
@@ -49,4 +45,8 @@
 
 .headerBtn:hover {
   background-color: #a33256;
+}
+
+@media screen and (max-width: 830px) {
+  
 }
