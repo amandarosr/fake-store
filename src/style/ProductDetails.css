@@ -76,3 +76,7 @@
 .addToCartBtn:hover {
   background-color: #a33256;
 }
+
+@media screen and (max-width: 830px) {
+  
+}

@@ -8,7 +8,6 @@
 #backBtn {
   justify-self: baseline;
   color: #6b2138;
-  font-size: 21px;
   text-decoration: none;
 }
 
@@ -48,5 +47,23 @@
 }
 
 @media screen and (max-width: 830px) {
-  
+  #secondTitle {
+    font-size: 35px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  .headerBtn {
+    height: 36px;
+    width: 56px;
+    margin-bottom: 7px;
+  }
+
+  .simpleHeaderIcon {
+    height: 25px;
+  }
+
+  .homeIcon {
+    height: 22px;
+  }
 }
