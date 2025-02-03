@@ -78,5 +78,18 @@
 }
 
 @media screen and (max-width: 830px) {
-  
+  #productDetailImage {
+    height: 16rem;
+  }
+
+  #product-detail-name {
+    font-size: 20px;
+  }
+
+  .addToCartBtn {
+    font-size: 15px;
+    height: 40px;
+    width: 180px;
+  }
+
 }
