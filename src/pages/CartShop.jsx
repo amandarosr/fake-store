@@ -53,7 +53,7 @@ export default class CartShop extends Component {
               cartItems.map((item, index) => (
                 <div key={index + 1} className="cartItem">
                   <div className="itemLeft">
-                    <img src={item.thumbnail} alt="pic" />
+                    <img src={item.image} alt="pic" />
                     <p>{item.title}</p>
                   </div>
                   <div className="itemPriceDiv">

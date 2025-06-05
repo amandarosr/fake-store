@@ -26,22 +26,21 @@ export default class ProductDetails extends Component {
 
   sendDetailsToStorage = () => {
     const {
-      productData: { title, price, thumbnail },
+      productData: { title, price, image, description },
     } = this.state;
     if (!localStorage.cart) {
       localStorage.setItem("cart", JSON.stringify([]));
     }
-    const productDetails = { title, price, thumbnail };
+    const productDetails = { title, price, image, description };
     const cartArray = JSON.parse(localStorage.getItem('cart'));
     const newCart = [...cartArray, productDetails];
     localStorage.setItem("cart", JSON.stringify(newCart));
-    // console.log(newCart);
     
   };
 
   render() {
     const { productData } = this.state;
-    const { title, price, thumbnail } = productData;
+    const { title, price, image, description } = productData;
 
     return (
       <>
@@ -49,21 +48,15 @@ export default class ProductDetails extends Component {
         <main className="productDetailMain">
           <div className="contentCase">
             <img
-              src={thumbnail}
+              src={image}
               alt={title}
               data-testid="product-detail-image"
               id="productDetailImage"
             />
             <div className="productDetailSpecs">
               <h3 id="product-detail-name">{title}</h3>
-              <div className="descrition-div">
-                <h3>Especificações técnicas</h3>
-                <ul>
-                  <li>Lorem ipsum dolor sit</li>
-                  <li>Veniam, expedita reprehenderit error </li>
-                  <li>At iste tempora pariatur!</li>
-                  <li>Sequi dolores quas</li>
-                </ul>
+              <div className="description-div">
+                <p>{description}</p>
               </div>
               <div className="price-cart-div">
                 <div className="product-detail-price">

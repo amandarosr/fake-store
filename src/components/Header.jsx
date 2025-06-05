@@ -14,9 +14,9 @@ export default class Header extends Component {
     return (
       <header>
         <div className="left-head">
-          <button id="menuBtn" onClick={clickToOpenNav}>
+          {/* <button id="menuBtn" onClick={clickToOpenNav}>
             <img src={menu} alt="menu" id="menuIcon"/>
-          </button>
+          </button> */}
           <h1 className="title">fake•store</h1>
         </div>
         <div id="searchDiv">

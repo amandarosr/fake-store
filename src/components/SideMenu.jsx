@@ -17,14 +17,14 @@ export default class SideMenu extends Component {
               {categoryList.length && (
                 <div className="category">
                   {categoryList &&
-                    categoryList.map((products) => (
+                    categoryList.map((products, index) => (
                       <Categories
                         categoryProducts={() =>
                           clickCategoryForProducts(products.id)
                         }
-                        key={products.id}
-                        name={products.name}
-                        value={products.name}
+                        key={index+1}
+                        name={products}
+                        value={products}
                       />
                     ))}
                 </div>

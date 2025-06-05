@@ -15,12 +15,11 @@ export default class Home extends Component {
     inputValue: "",
     results: [],
     noResults: false,
-    openNav: false,
   };
 
   componentDidMount() {
     this.fetchCategoryList();
-    this.clickCategoryForProducts("MLB1039");
+    this.showAllProducts();
   }
 
   handleChange = ({ target }) => {
@@ -28,30 +27,41 @@ export default class Home extends Component {
     this.setState({ [name]: value });
   };
 
-  clickToOpenNav = () => this.setState({ openNav: true });
-
-  closeNav = () => this.setState({ openNav: false });
-
   fetchCategoryList = async () => {
     this.setState({ loading: true });
     const categories = await getCategories();
     this.setState({ categoryList: categories });
   };
 
-  clickForProducts = async () => {
-    const { inputValue } = this.state;
-    const apiProducts = await getProductsFromCategoryAndQuery("", inputValue);
-    const data = apiProducts.results;
+  // clickForProducts = async () => {
+  //   const { inputValue } = this.state;
+  //   const apiProducts = await getProductsFromCategoryAndQuery("", inputValue);
+  //   const data = apiProducts.results;
+  //   this.setState({
+  //     results: data,
+  //     noResults: false,
+  //   });
+  //   if (data.length === 0) {
+  //     this.setState({
+  //       noResults: true,
+  //     });
+  //   }
+  // };
+
+  showAllProducts = async () => {
+    const response = await fetch('https://fakestoreapi.com/products')
+    const data = await response.json();
     this.setState({
       results: data,
       noResults: false,
+      openNav: false,
     });
     if (data.length === 0) {
       this.setState({
         noResults: true,
       });
     }
-  };
+  }
 
   clickCategoryForProducts = async (categoryId) => {
     const products = await getProductsFromCategoryAndQuery(categoryId);
@@ -76,7 +86,6 @@ export default class Home extends Component {
           clickForProducts={this.clickForProducts}
           inputValue={inputValue}
           onInputChange={this.handleChange}
-          clickToOpenNav={this.clickToOpenNav}
         />
         <main>
           <SideMenu
@@ -97,7 +106,7 @@ export default class Home extends Component {
                 >
                   <Card
                     name={result.title}
-                    img={result.thumbnail}
+                    img={result.image}
                     price={result.price}
                   />
                 </Link>

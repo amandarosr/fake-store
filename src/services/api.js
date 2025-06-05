@@ -1,5 +1,5 @@
 export async function getCategories() {
-  const response = await fetch('https://api.mercadolibre.com/sites/MLB/categories');
+  const response = await fetch('https://fakestoreapi.com/products/categories');
   const data = await response.json();
   return data;
 }
@@ -11,7 +11,7 @@ export async function getProductsFromCategoryAndQuery(categoryId, query) {
 }
 
 export async function getProductById(id) {
-  const response = await fetch(`https://api.mercadolibre.com/items/${id}`);
+  const response = await fetch(`https://fakestoreapi.com/products/${id}`);
   const data = await response.json();
   return data;
 }
