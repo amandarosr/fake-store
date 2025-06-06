@@ -64,7 +64,7 @@ export default class ProductDetails extends Component {
                   <p>{price}</p>
                 </div>
                 <button
-                  className="addToCartBtn"
+                  className="addToCartBtn btn"
                   onClick={this.sendDetailsToStorage}
                 >
                   Adicionar ao carrinho

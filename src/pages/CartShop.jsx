@@ -45,7 +45,6 @@ export default class CartShop extends Component {
       <div className="cart-container">
         <div className="title-div">
           <h2 className="title cartTitle">fake•store</h2>
-          <h3 className="title cartTitle2">Carrinho</h3>
         </div>
         <div className="cart-main">
           <div className="cartList">
@@ -68,9 +67,9 @@ export default class CartShop extends Component {
           </div>
           <div className="checkoutBtns">
             <Link to="/">
-              <button>Continuar comprando</button>
+              <button className="btn">Continuar comprando</button>
             </Link>
-            <button onClick={this.clearCart}>Finalizar compra</button>
+            <button onClick={this.clearCart} className="btn">Finalizar compra</button>
           </div>
         </div>
       </div>

@@ -17,10 +17,6 @@ header {
   font-size: 50px;
 }
 
-.homeLink {
-  text-decoration: none;
-}
-
 #searchDiv {
   display: flex;
   justify-content: center;

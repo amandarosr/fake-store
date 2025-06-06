@@ -11,9 +11,9 @@ export default class Header extends Component {
 
     return (
       <header>
-        <Link to="/" className="homeLink">
-            <h1 className="title">fake•store</h1>
-          </Link>
+        <Link to="/" className="cardLink">
+          <h1 className="title">fake•store</h1>
+        </Link>
         <div id="searchDiv">
           <input
             type="text"

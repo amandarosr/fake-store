@@ -76,7 +76,7 @@ export default class Home extends Component {
         </div>
         <div className="landingImg"/>
         <main>
-          <div>hi</div>
+          {/* <div>hi</div> */}
           <div id="card-container" className="cards">
             {noResults && <h3>Nenhum produto foi encontrado</h3>}
             {results &&
