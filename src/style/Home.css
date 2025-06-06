@@ -1,13 +1,40 @@
-@font-face {
-  font-family: TitleFont;
-  src: url("../images/Aurora.otf");
+.fullpage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.secondTitle {
+  display: flex;
+  justify-content: flex-end;
+  height: 100vh;
+}
+
+.secondTitle h1 {
+  color: red;
+  font-size: 12vw;
+  position: relative;
+  z-index: -1;
+  top: 48vh
+}
+
+.landingImg {
+  background-image: url("../images/landing.jpg");
+  background-size: cover;
+  background-position-y: 80%;
+  height: 100vh;
+  position: absolute;
+  z-index: -2;
+  top: 0;
+  width: 100%;
 }
 
 main {
+  background-color: #FCFCED;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 78vh;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .cards {
@@ -15,7 +42,7 @@ main {
   flex-flow: row wrap;
   justify-content: center;
   margin: 25px 40px;
-  max-width: 90%;
+  max-width: 75%;
 }
 
 .cardLink {
@@ -24,18 +51,20 @@ main {
 }
 
 footer {
-  background-color: rgb(209, 195, 96, 0.75);;
-  border-top: 2px solid rgb(107, 33, 56, 0.6);
-  color: #6b2138;
+  color: rgba(255, 0, 0, 0.5);
   text-align: center;
-  font-family: TitleFont;
-  font-size: 13px;
+  font-size: 135x;
   font-weight: 600;
   margin-top: 30px;
-  padding-bottom: 1px;
+  padding-bottom: 5px;
+  width: 80%;
 }
 
 @media screen and (max-width: 830px) {
+  .secondTitle h1 {
+    top: 70vh
+  }
+
   .cardLink {
     width: 135px;
   }

@@ -137,10 +137,10 @@ class Reviews extends React.Component {
             onChange={this.handleCommentChange}
           />
           <div>
-            {!formValid ? <p data-testid="error-msg">Campos inválidos</p> : ""}
+            {!formValid ? <p className="error-msg">Campos inválidos</p> : ""}
           </div>
           <button
-            className="submitBtn"
+            className="submitBtn btn"
             type="button"
             onClick={() => {
               if (!emailValid || !ratingValid) {
