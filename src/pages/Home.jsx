@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import { Component } from "react";
 import { Link } from "react-router-dom";
 import "../style/Home.css";
 import Header from "../components/Header";
@@ -62,7 +62,7 @@ export default class Home extends Component {
   };
 
   render() {
-    const { categoryList, inputValue, results, noResults, openNav } =
+    const { categoryList, inputValue, results, noResults } =
       this.state;
     return (
       <div className="fullpage">

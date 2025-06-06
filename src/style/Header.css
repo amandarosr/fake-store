@@ -12,8 +12,13 @@ header {
 }
 
 .title {
+  color: transparent;
   text-shadow: 4px 4px rgba(0, 0, 0, 0.8);
   font-size: 50px;
+}
+
+.homeLink {
+  text-decoration: none;
 }
 
 #searchDiv {
@@ -23,7 +28,7 @@ header {
 
 #searchArea {
   border: none;
-  background-color: #fcfced;
+  background-color: rgb(252, 252, 237, 0.95);
   box-shadow: 1px 5px 0 rgba(0,0,0,0.8), 4px 4px 2px rgba(0,0,0,0.8);
   height: 35px;
   width: 250px;
@@ -31,6 +36,10 @@ header {
   font-size: 15px;
   text-align: center;
   margin-right: 15px;
+}
+
+#searchArea:hover {
+  background-color: rgb(252, 252, 237, 0.85);
 }
 
 .iconCase {
@@ -47,6 +56,10 @@ header {
 
 .headerIcon {
   height: 32px;
+}
+
+.headerIcon:hover {
+  height: 35px;
 }
 
 @media screen and (max-width: 830px) {

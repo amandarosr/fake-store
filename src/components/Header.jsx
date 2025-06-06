@@ -4,18 +4,16 @@ import PropTypes from "prop-types";
 import "../style/Header.css";
 import cart from "../images/cart.png";
 import search from "../images/search.png";
-import menu from "../images/menu.png";
 
 export default class Header extends Component {
   render() {
-    const { clickForProducts, inputValue, onInputChange, 
-      clickToOpenNav } = this.props;
+    const { clickForProducts, inputValue, onInputChange } = this.props;
 
     return (
       <header>
-        <div className="left-head">
-          <h1 className="title">fake•store</h1>
-        </div>
+        <Link to="/" className="homeLink">
+            <h1 className="title">fake•store</h1>
+          </Link>
         <div id="searchDiv">
           <input
             type="text"
