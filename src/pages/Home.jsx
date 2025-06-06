@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import "../style/Home.css";
 import Header from "../components/Header";
-import SideMenu from "../components/SideMenu";
 import Card from "../components/Card";
 import {
   getCategories,
@@ -32,21 +31,6 @@ export default class Home extends Component {
     const categories = await getCategories();
     this.setState({ categoryList: categories });
   };
-
-  // clickForProducts = async () => {
-  //   const { inputValue } = this.state;
-  //   const apiProducts = await getProductsFromCategoryAndQuery("", inputValue);
-  //   const data = apiProducts.results;
-  //   this.setState({
-  //     results: data,
-  //     noResults: false,
-  //   });
-  //   if (data.length === 0) {
-  //     this.setState({
-  //       noResults: true,
-  //     });
-  //   }
-  // };
 
   showAllProducts = async () => {
     const response = await fetch('https://fakestoreapi.com/products')
@@ -87,13 +71,12 @@ export default class Home extends Component {
           inputValue={inputValue}
           onInputChange={this.handleChange}
         />
+        <div className="secondTitle">
+          <h1>Garanta o seu!</h1>
+        </div>
+        <div className="landingImg"/>
         <main>
-          <SideMenu
-            closeNav={this.closeNav}
-            categoryList={categoryList}
-            clickCategoryForProducts={this.clickCategoryForProducts}
-            openNav={openNav}
-          />
+          <div>hi</div>
           <div id="card-container" className="cards">
             {noResults && <h3>Nenhum produto foi encontrado</h3>}
             {results &&

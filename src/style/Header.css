@@ -1,76 +1,42 @@
-@font-face {
-  font-family: TitleFont;
-  src: url("../images/Aurora.otf")
-}
-
 header {
-  background-color: rgb(209, 195, 96, 0.75);
+  background-color: #FCFCED;
+  border-radius: 0  0 10px 10px;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  align-items: flex-end;
-  border-bottom: #6B2138 solid 4px;
-  width: 100%;
-}
-
-.left-head {
-  display: flex;
   align-items: center;
-  margin: -20px 0 -45px 30px;
-}
-
-#menuBtn {
-  background: none;
-  border: none;
-  height: 65px;
-  margin: 0 8px 5px 0;
-}
-
-#menuIcon {
-  height: 65px;
-}
-
-#menuBtn:hover {
-  background-color: rgb(183, 60, 99, 0.15);
-  border-radius: 20px
+  padding: 0 20px;
+  width: 80%;
+  background-clip: text;
+  color: transparent;
 }
 
 .title {
-  color: #6B2138;
-  text-shadow: 3px 3px rgba(0,0,0,0.12);
+  text-shadow: 4px 4px rgba(0, 0, 0, 0.8);
   font-size: 50px;
-  font-family: TitleFont;
 }
 
 #searchDiv {
   display: flex;
   justify-content: center;
-  margin: 0 30px 16px 20px;
 }
 
 #searchArea {
-  border: solid 2px #6B2138;
-  background-color: rgb(252, 252, 237);
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  border: none;
+  background-color: #fcfced;
+  box-shadow: 1px 5px 0 rgba(0,0,0,0.8), 4px 4px 2px rgba(0,0,0,0.8);
   height: 35px;
-  width: 260px;
-  border-radius: 25px;
+  width: 250px;
+  border-radius: 10px;
   font-size: 15px;
   text-align: center;
-  margin-top: 1px;
-  margin-right: 5px;
+  margin-right: 15px;
 }
 
 .iconCase {
-  border: solid 2px #611930;
-  background-color: #6B2138;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  border-radius: 50px;
-  height: 38px;
-  width: 105px;
 }
 
 .headBtn {
@@ -79,30 +45,8 @@ header {
   cursor: pointer;
 }
 
-#queryBtn {
-  background-color: #9c3153;
-  border-radius: 20px;
-  height: 30px;
-  width: 48px;
-}
-
-#queryBtn:hover {
-  background-color: #b73c63;
-}
-
-#cartBtn {
-  border-radius: 20px;
-  height: 30px;
-  width: 46px;
-  padding-left: 3px;
-}
-
-#cartBtn:hover {
-  background-color: #b73c63;
-}
-
 .headerIcon {
-  height: 22px;
+  height: 32px;
 }
 
 @media screen and (max-width: 830px) {
@@ -110,41 +54,21 @@ header {
     align-items: center;
     justify-content: center;
     padding-top: 20px;
-  }
-
-  #menuIcon {
-    height: 46px;
-    margin: 0 0 10px -20px;
+    width: 90%
   }
 
   .title {
-    font-size: 35px;
-    margin: 0 20px 15px -8px;
+    font-size: 40px;
+    margin: 0 20px 10px 0;
   }
 
   #searchArea {
-    height: 24px;
+    border-radius: 8px;
+    height: 26px;
     width: 180px;
-    margin: 20px 0 -5px 20px;
-  }
-
-  .iconCase {
-    height: 27px;
-    width: 60px;
-    margin: 20px -15px -20px 5px;
-  }
-
-  #queryBtn {
-    height: 22px;
-    width: 28px;
-  }
-
-  #cartBtn {
-    height: 20px;
-    width: 30px;
   }
 
   .headerIcon {
-    height: 17px;
+    height: 28px;
   }
 }

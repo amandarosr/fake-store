@@ -2,7 +2,7 @@ import { Component } from "react";
 import { Link } from "react-router-dom";
 import { PropTypes } from "prop-types";
 import { getProductById } from "../services/api";
-import HeaderSimple from "../components/HeaderSimple";
+import Header from "../components/Header";
 import Reviews from "../components/Reviews";
 import "../style/ProductDetails.css";
 
@@ -44,7 +44,7 @@ export default class ProductDetails extends Component {
 
     return (
       <>
-        <HeaderSimple />
+        <Header />
         <main className="productDetailMain">
           <div className="contentCase">
             <img
